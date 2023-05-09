@@ -7,7 +7,7 @@ export const StatsList = styled.ul`
   align-items: center;
   justify-content:center;
   // margin-bottom: 10px;
-  padding-bottom:50px;
+  padding:50px;
 `
 
 export const StatsItem = styled.li`
@@ -19,6 +19,8 @@ export const Value = styled.p`
   font-size: 24px;
   color: orange;
 `
+
+
 // export const Num = styled.span`
 //   color: black;
 //   font-size: 10px;

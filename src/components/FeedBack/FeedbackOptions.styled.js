@@ -5,7 +5,7 @@ export const ButtonsList = styled.ul`
   gap: 100px;
   align-items: center;
   justify-content: center;
-  margin-top:50px
+  padding:50px 0;
 `;
 
 export const Button = styled.button`

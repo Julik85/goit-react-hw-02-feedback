@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-
-// import { Section } from '../Section/Section';
 import { Button, ButtonsList } from './FeedbackOptions.styled';
 
 export function FeedbackOptions({ options, onLeaveFeedback }) {
@@ -9,12 +7,12 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
       <ButtonsList>
         {options.map(option => (
           <Button
-            key={option}
-            onClick={() => {
-              onLeaveFeedback(option);
-            }}
-          >
-            {option.charAt(0).toUpperCase() + option.slice(1)}
+          key={option}
+          type="button"
+          onClick={onLeaveFeedback}
+          value={option}
+        >
+          {option}
           </Button>
         ))}
       </ButtonsList>
